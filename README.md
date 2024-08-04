@@ -9,7 +9,7 @@ License
 
 BSD 2-Clause License
 
-Copyright (c) 2024, Omkar Sabnis, Raaj Mutreja, Souurabh Gavhane, and Syracuse University
+Copyright (c) 2024, Omkar Sabnis, Raaj Mutreja, Souurabh Gavhane.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
