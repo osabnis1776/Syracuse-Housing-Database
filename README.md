@@ -3,6 +3,7 @@ Syracuse Housing Database
 Overview
 
 The Syracuse Housing Database project provides a comprehensive analysis of housing data in the Syracuse area. This project involves various SQL scripts, views, and functions developed using T-SQL and Azure Data Studio.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 License
 
@@ -30,12 +31,15 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Getting Started
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Prerequisites
 Azure Data Studio
 SQL Server
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Installation
 Clone the repository to your local machine:
@@ -44,6 +48,7 @@ Copy code
 git clone https://github.com/osabnis1776/syracuse-housing-database.git
 Open Azure Data Studio and connect to your SQL Server instance.
 Execute the scripts in the following order:
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Up Scripts
 
@@ -55,6 +60,7 @@ up/02_create_tables.sql: Creates the required tables for the project.
 Tables include houses, neighborhoods, and sales.
 up/03_insert_data.sql: Inserts initial data into the tables.
 Populates the tables with sample data for analysis.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Down Scripts
 
@@ -64,6 +70,7 @@ down/01_drop_database.sql: Drops the Syracuse Housing database.
 This script deletes the entire database, including all data and schema.
 down/02_drop_tables.sql: Drops the tables created for the project.
 Removes each table individually if you prefer not to drop the entire database.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Tables
 
@@ -94,6 +101,7 @@ sale_id: Primary key, unique identifier for each sale.
 house_id: Foreign key linking to the houses table.
 sale_date: Date when the house was sold.
 sale_price: The sale price of the house.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Views
 
@@ -113,6 +121,7 @@ average_prices displays average housing prices by neighborhood.
 Columns:
 neighborhood: Name of the neighborhood.
 average_price: Average price of houses in the neighborhood.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Functions
 
@@ -144,6 +153,7 @@ To get the average price of houses in a specific neighborhood, you can call:
 sql
 Copy code
 SELECT dbo.calculate_average_price(@neighborhood_id);
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 Credits
 
